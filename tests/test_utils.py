@@ -1,5 +1,7 @@
 from src.utils import get_executed_operations
 from src.classes import Operation
+from main import op
+from datetime import datetime
 
 
 def test_get_executed_operations():
@@ -49,3 +51,7 @@ def test_operation_instance():
         "Счет **8542 -> Счет **4188\n"
         "79114.93 USD\n"
     )
+
+
+
+

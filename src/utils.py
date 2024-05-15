@@ -3,7 +3,7 @@ from pathlib import Path
 from src.classes import Operation
 
 
-def load_json(path: Path):    #   -> list[dict]
+def load_json(path: Path):  # -> list[dict]
     """
     Загрузка данных об операциях из json-файла
     :param path:
@@ -13,7 +13,7 @@ def load_json(path: Path):    #   -> list[dict]
         return json.load(f)
 
 
-def get_executed_operations(operations):    #   : list[dict]) -> list[dict]
+def get_executed_operations(operations):  # : list[dict]) -> list[dict]
     """
     Получение операций EXECUTED
     :param operations:
@@ -26,7 +26,7 @@ def get_executed_operations(operations):    #   : list[dict]) -> list[dict]
     ]
 
 
-def get_operation_instances(operations):      # : list[dict]) -> list[Operation]
+def get_operation_instances(operations):  # : list[dict]) -> list[Operation]
     """
     Получение экземпляров класса Operation
     :param operations:
@@ -50,11 +50,10 @@ def get_operation_instances(operations):      # : list[dict]) -> list[Operation]
     return operation_instances
 
 
-def sort_operations_by_date(operations):     # list[Operation]) -> list[Operation]:
+def sort_operations_by_date(operations):  # list[Operation]) -> list[Operation]:
     """
-
+    Сортировка экземпляров операций
     :param operations:
     :return:
     """
-    return sorted(operations,  reverse=True)
-
+    return sorted(operations, reverse=True)
